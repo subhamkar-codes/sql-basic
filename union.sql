@@ -1,8 +1,9 @@
 use startersql;
 
-select email, name, 'USER' as role from users 
+select email, name,date_of_birth ,'USER' as role from users 
 UNION
-select email, name,'ADMIN' as role from admin_users;
+select email, name,date_of_birth ,'ADMIN' as role from admin_users
+order by date_of_birth;
 -- UNION
 -- select city , state from addresses;
 
